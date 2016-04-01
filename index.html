@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clean HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    
+    <div id="textbox" contenteditable="true" data-text="Enter text here"></div>
+
+    <button onclick="cleanhtml()" class="cleaner">Click Me</button>
+    <button class="btn" data-clipboard-target="#textbox" style="display:none;">
+        Copy to Clipboard
+    </button>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.8/clipboard.min.js"></script>
+</body>
+<footer>
+    Made with <i class="fa fa-heart"></i>
+ by <a href="https://github.com/drewdrewthis">.drewdrewthis.</a>
+</footer>
+
+</html>

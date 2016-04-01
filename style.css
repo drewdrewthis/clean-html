@@ -1,0 +1,41 @@
+* {
+	outline: none;
+}
+
+body, footer {
+	max-width: 800px;
+	margin: auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+#textbox {
+	width: 100%;
+	border-top: 2px solid black;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-sizing: border-box;
+}
+
+#textbox:not(:empty) {
+	text-align: left;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content:attr(data-text);
+    color: black;
+    opacity: .5;
+    font-style: italic;
+    text-align: center;
+}
+
+footer {
+	font-size: .7rem;
+	opacity: .5;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
