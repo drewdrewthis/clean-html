@@ -31,10 +31,14 @@ $.fn.extend({
 var $clone;
 
 function processImages(elem) {
+
     var src = $(elem).attr('src');
-    $('#imageHolder')
-    .show()
-    .append('<img src="' + src + '"/>');
+    
+    $('#imageHolder').show();
+
+    if (src) {
+        $('#imageHolder').append('<img src="' + src + '"/>');
+    }
 }
 
 function cleanhtml() {
