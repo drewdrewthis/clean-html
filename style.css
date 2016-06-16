@@ -9,6 +9,11 @@ body, footer {
 	text-align: center;
 }
 
+header {
+	position: relative;
+	z-index: 10000;
+}
+
 h1 {
 	font-style: italic;
 	color: lightgrey;
@@ -24,6 +29,8 @@ h1 {
 	margin-bottom: 2rem;
 	box-sizing: border-box;
 	overflow: hidden;
+	position: relative;
+	z-index: 0;
 }
 
 #textbox:not(:empty) {
