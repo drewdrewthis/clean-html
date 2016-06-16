@@ -14,7 +14,7 @@ header {
 	z-index: 10000;
 }
 
-h1 {
+header h1 {
 	font-style: italic;
 	color: lightgrey;
 }
