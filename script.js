@@ -47,6 +47,8 @@ function cleanhtml() {
 
     $clone = $('#textbox').clone();
 
+    $('#imageHolder').html(''); // Flush image holder
+
 	$('#textbox').fadeOut(0);
 
     $('#textbox')
@@ -87,10 +89,11 @@ function cleanhtml() {
 };
 
 function reset() {
-    $('#textbox').html('');
+    $('#textbox, #imageHolder').html('');
     $('.btn').hide();
 }
 
 function unClean() {
     $('#textbox').html($clone.html());
+    $('#imageHolder').html('');
 }
