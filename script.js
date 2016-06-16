@@ -92,5 +92,5 @@ function reset() {
 }
 
 function unClean() {
-    $('#textbox').html($clone);
+    $('#textbox').html($clone.html());
 }
