@@ -30,6 +30,13 @@ $.fn.extend({
 
 var $clone;
 
+function processImages(elem) {
+    var src = $(elem).attr('src');
+    $('#imageHolder')
+    .show()
+    .append('<img src="' + src + '"/>');
+}
+
 function cleanhtml() {
 
 	new Clipboard('.btn');
@@ -53,6 +60,11 @@ function cleanhtml() {
         }
 
         else {
+
+            if (this.nodeName === "IMG") {
+                processImages(this);
+            }
+
             $(elem).replaceWith(function () {
 
                 if( this.nodeName == "IMG" ) {
@@ -65,8 +77,6 @@ function cleanhtml() {
         }
         
     });
-
-	//console.log($('#textbox').html());
 
 	$('#textbox').fadeIn(1000);
 	$('.btn').show();
