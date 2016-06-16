@@ -9,13 +9,24 @@
 </head>
 
 <body>
-    
-    <div id="textbox" contenteditable="true" data-text="Enter text here"></div>
 
-    <button onclick="cleanhtml()" class="cleaner">Click Me</button>
-    <button class="btn" data-clipboard-target="#textbox" style="display:none;">
-        Copy to Clipboard
-    </button>
+    <header id="header" class="">
+        <h1>Clean HTML</h1> 
+        <div class="controls">
+            <button onclick="cleanhtml()" class="cleaner">Clean</button>
+            <button class="btn" data-clipboard-target="#textbox" style="display:none;">
+                Copy to Clipboard
+            </button>
+            <button onClick="reset()">
+                Reset
+            </button>
+            <button class="btn" style="display:none;" onClick="unClean()">
+                unClean
+            </button>
+        </div>
+    </header><!-- /header -->
+
+    <div id="textbox" contenteditable="true" data-text="Enter text here"></div>
 
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
